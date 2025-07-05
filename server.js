@@ -85,6 +85,11 @@ const jobSchema = new mongoose.Schema({
 const Job = mongoose.model('Job', jobSchema);
 
 // Routes
+
+app.get('/', async (req, res) => {
+  return 'Hello World';
+});
+
 // Get all jobs
 app.get('/api/jobs', async (req, res) => {
   try {
