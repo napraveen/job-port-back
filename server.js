@@ -87,7 +87,7 @@ const Job = mongoose.model('Job', jobSchema);
 // Routes
 
 app.get('/', async (req, res) => {
-  return 'Hello World';
+  res.send('Hello World'); // Use res.send() or res.json()
 });
 
 // Get all jobs
